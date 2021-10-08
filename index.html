@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+
+        1   // Дан массив числами, например: [10, 20, 30, 50, 235, 3000]. 
+                //Выведите на экран только те числа из массива, которые начинаются на цифру 1, 2 или 5
+
+                let arr = [10, 20, 30, 50, 235, 3000];
+
+                for (let i = 0; i < arr.length; i++) {
+                   let num = String(arr[i]);
+                    let char = num[0];
+                    if (char == 1 || char == 2 || char == 5) {
+                    console.log(num);
+                    }
+                }     
+            
+                let arr = [10, 20, 30, 50, 235, 3000]
+                console.log(arr.filter(num => ['1', '2' ,'3'].includes(num.toString()[0])));
+            
+            2 // Дан массив с элементами  1, 2, 3, 4, 5, 6, 7, 8, 9. С помощью цикла  for  создайте строку '-1-2-3-4-5-6-7-8-9-'.
+
+             let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+              for(let i = 0; i < arr.length; i++){
+               console.log('-' + arr [i])
+
+             }
+              
+            3 //  Сделайте функцию, которая принимает параметром число от 1 до 7, а возвращает день недели на русском языке.
+
+
+                let Day = function(day) {
+
+                    switch(day){
+                        case 1: return('Понедельник')
+                        case 2: return('Вторник')
+                        case 3: return('Среда')
+                        case 4: return('Четверг')
+                        case 5: return('Пятница')
+                        case 6: return('Суббота')
+                        case 7: return('Воскресенье')
+                        default: return('Не верное сообщение')
+
+
+                    }
+
+                }
+                    console.log(Day(1));
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
